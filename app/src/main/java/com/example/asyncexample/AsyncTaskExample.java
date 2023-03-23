@@ -17,6 +17,9 @@ public class AsyncTaskExample extends AppCompatActivity {
         asyncTask.execute("Hello, world");
     }
 
+    public void onClick(View v) {
+        //TODO
+    }
 
 }
 
