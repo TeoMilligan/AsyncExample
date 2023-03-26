@@ -16,10 +16,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ButtonClick(View view) {
+        Intent intent = 0;
         switch (view.getId()) {
             case R.id.Asynctask:
-                Intent intent = new Intent(this, AsyncTaskExample.class);
+                intent = new Intent(this, AsyncTaskExample.class);
                 startActivity(intent);
+                break;
+            case R.id.thread:
+                intent = new Intent(this, ThreadExample.class);
+                startActivity(intent);
+                break;
+            default: return;
         }
     }
 
